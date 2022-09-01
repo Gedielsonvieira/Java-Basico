@@ -6,7 +6,13 @@ public class FluxoComTratamento {
             //sempre deixar um método comentado para ver a ação do outro
             metodo1();
             //metodo3();
-        } catch(ArithmeticException | NullPointerException | MyExceptionOne /*| MyExceptionTwo*/ ex) {
+            /*catch genérico - pois tinha muitas exceções especificas*/
+            /*
+              catch genérico - pode parecer uma boa prática, mas normalmente não é.
+              Como regra geral, sempre tente ser mais especifico possível no bloco catch
+              favorecendo vários blocos catch ou usando multi-catch.
+            */
+        } catch(Exception /*ArithmeticException | NullPointerException | MyExceptionOne | MyExceptionTwo*/ ex) {
             String msg = ex.getMessage();
             System.out.println("Exception " + msg);
             ex.printStackTrace();
