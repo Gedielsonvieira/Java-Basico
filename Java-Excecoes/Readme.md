@@ -23,7 +23,7 @@ o Java pega esse objeto que esta no HEAP (memória de objetos), transforma em um
 > O Java reconhece que, quando jogamos uma exceção, saímos abruptamente do código pos isso se houver código abaixo o compilador acusa-rá erro.
 
 ## Checked e Unchecked
-<img alt="Hierarquia de Classes" src="./MyException-extends.jpg" width="500px"/>
+<img alt="Hierarquia de Classes" src="./MyException-extends.jpg" width="100%"/>
 
 * Existe uma hierarquia grande de classes que representam exceções. Por exemplo, ArithmeticException é filha de RuntimeException, que herda de Exception, que por sua vez é filha da classe mais ancestral das exceções, Throwable. Conhecer bem essa hierarquia significa saber utilizar exceções em sua aplicação.
 * Throwable é a classe que precisa ser extendida para que seja possível jogar um objeto na pilha (através da palavra reservada throw)
