@@ -33,6 +33,15 @@ o Java pega esse objeto que esta no HEAP (memória de objetos), transforma em um
 * Exceções são separadas em duas grandes categorias: aquelas que são obrigatoriamente verificadas pelo compilador e as que não são verificadas. As primeiras são denominadas checked e são criadas através do pertencimento a uma hieraquia que não passe por RuntimeException. As segundas são as unchecked, e são criadas como descendentes de RuntimeException.
 
 ### Quando utilizar checked ou unchecked
-`-` Se algumas exceções podem ocorrer e quiser avisar a quem for utilizar que faça um tratamento, utilize checked.
+`-` Se algumas exceções podem ocorrer e quiser avisar a quem for utilizar que faça um tratamento, utilize checked.<br>
 `-` Se não há necessidade ou mais flexibilidade e acredita-se que o desenvolvedor pode fazer o tratamento quando ele achar melhor, use unchecked.
+
+### Benefício das Exceptions
+- [x] Exceções tem um nome e, caso esse nome seja expressivo, documenta o problema que está ocorrendo.
+
+- [x] Exceções podem ter uma mensagem, ou seja, o problema e o estado das variáveis podem ser descritos na mensagem.
+
+- [x] Exceções mudam o fluxo de execução, ou seja, evitam que o problema siga o fluxo "normal" quando algo excepcional acontece.
+
+- [x] Exceções podem ser tratadas, ou seja, podemos voltar para a execução "normal" caso o "problema" esteja resolvido.
 
