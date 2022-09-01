@@ -32,5 +32,7 @@ o Java pega esse objeto que esta no HEAP (memória de objetos), transforma em um
 * StackOverflowError é um erro da máquina virtual para informar que a pilha de execução não tem mais memória.
 * Exceções são separadas em duas grandes categorias: aquelas que são obrigatoriamente verificadas pelo compilador e as que não são verificadas. As primeiras são denominadas checked e são criadas através do pertencimento a uma hieraquia que não passe por RuntimeException. As segundas são as unchecked, e são criadas como descendentes de RuntimeException.
 
-
+### Quando utilizar checked ou unchecked
+`-` Se algumas exceções podem ocorrer e quiser avisar a quem for utilizar que faça um tratamento, utilize checked.
+`-` Se não há necessidade ou mais flexibilidade e acredita-se que o desenvolvedor pode fazer o tratamento quando ele achar melhor, use unchecked.
 
