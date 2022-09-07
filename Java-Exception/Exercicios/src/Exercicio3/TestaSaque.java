@@ -7,7 +7,7 @@ public class TestaSaque {
 
         try {
             c1.saca(200);
-        }catch (Exception ex){
+        }catch (SaldoInsuficiente ex){
             System.out.println(ex.getMessage());
         }
 
